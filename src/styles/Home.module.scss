@@ -1,0 +1,31 @@
+.container {
+  margin: 0 auto;
+  max-width: 1180px;
+}
+
+.content {
+  padding: 1rem;
+  background-color: var(--white);
+
+  .main {
+    h2 {
+      font-size: 2rem;
+      text-align: center;
+      color: var(--blue);
+      margin-block: 2rem;
+    }
+
+    > p {
+      margin-block: 2rem;
+
+      a {
+        text-decoration: none;
+        color: var(--blue);
+      }
+
+      span {
+        color: var(--blue);
+      }
+    }
+  }
+}

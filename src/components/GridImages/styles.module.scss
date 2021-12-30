@@ -1,0 +1,51 @@
+.container {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    list-style: none;
+    text-align: center;
+
+    li {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      height: 25rem;
+
+      img {
+        transition: opacity, 0.3s;
+        border-top-right-radius: 0.5rem;
+        border-top-left-radius: 0.5rem;
+      }
+
+      p {
+        border: 1px solid #ccc;
+        border-bottom-left-radius: 0.5rem;
+        border-bottom-right-radius: 0.5rem;
+      }
+
+      &:hover {
+        p {
+          background-color: var(--green);
+          color: var(--white);
+          transition: background-color, color, 0.3s;
+        }
+
+        img {
+          opacity: 0.8;
+        }
+      }
+
+      p {
+        padding: 1rem;
+        color: #111;
+        font-size: 1rem;
+        line-height: 1.25;
+
+        span {
+          color: var(--blue);
+        }
+        
+      }
+    }
+  }
